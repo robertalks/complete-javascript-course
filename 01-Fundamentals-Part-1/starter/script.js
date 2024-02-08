@@ -134,7 +134,7 @@ console.log("String with \n\
 multiple\n\
 lines");
 
-console.log(`String with
+const jonas = "I'm " + firstName + ", a " +
 multiple
 lines`);
 
@@ -143,6 +143,8 @@ const age = 15;
 if (age >= 18) {
   console.log("Sarah can start driving license 😃");
 } else {
+
+const jonas = "I'm " + firstName + ", a " +
   const yearsLeft = 18 - age;
   console.log(`Sarah is too young, wait another ${yearsLeft} years.`);
 }
@@ -156,7 +158,6 @@ if (birthYear <= 2000) {
   century = 21;
 }
 console.log(century);
-*/
 
 // const massMark = 78;
 // const heightMark = 1.69;
@@ -176,3 +177,46 @@ if (BMIMark > BMIJohn) {
 } else {
   console.log(`John's BMI (${BMIJohn}) is higher than Mark's (${BMIMark})!`);
 }
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion
+console.log('I am ' + 23 + ' years');
+console.log('23' + '10' + 3);
+console.log('23' * '2');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+  console.log("Don't spend it all!");
+} else {
+  console.log("You should get a job!");
+}
+
+let height;
+if (height) {
+  console.log("YAY!, height is defined");
+} else {
+  console.log("Height is UNDEFINED");
+}
+*/
+
